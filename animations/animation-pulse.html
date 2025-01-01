@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pulse Animation</title>
+    <style>
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+
+        .redBall {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            margin: 50px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);  /* size - 1 */
+            }
+            50% {
+                transform: scale(2); /* size - 2 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pulse redBall"></div>
+</body>
+</html>

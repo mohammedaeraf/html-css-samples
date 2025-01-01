@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide In</title>
+    <style>
+        .blueBox {
+            background-color: #007bff; 
+            color: white; 
+            font-weight: bold;
+            font-size: 32px;
+            width: 400px;
+            padding: 20px;
+        }
+        .slide-in {
+            transform: translateX(-100%); /* Move the element off the left side of the page */
+            animation: slideIn 1.5s forwards;  
+        }
+        @keyframes slideIn {
+            to {
+                transform: translateX(0); /* Move the element to normal position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blueBox slide-in">
+        Sliding in from the left!
+    </div>
+</body>
+</html>
