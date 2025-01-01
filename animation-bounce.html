@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        .redBall {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+
+        .bouncing {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: bounce 1s infinite;
+
+        }
+
+        /* Animations are defined using Keyframews. One keyframe for each animation */
+        @keyframes bounce {
+            0% {
+                top: 0px;
+                /* The ball starts at this position */
+            }
+
+            50% {
+                top: 200px;
+                /* The ball drops to this position */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="redBall bouncing"></div>
+</body>
+
+</html>
