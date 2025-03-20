@@ -1,0 +1,38 @@
+/* Defining CSS Variables */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #ffffff;
+  --text-color: #d31a1a;
+  --button-bg: #1a7b07;
+  --button-hover: #2aa212;
+  --font-size: 18px;
+}
+
+/* Applying Variables */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: var(--font-size);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
