@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
         * {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
         /* Flex container */
         .flex-container {
             display: flex;
-            justify-content: flex-start;  /* Distributes space around items */
-            align-items: center;  /* Aligns items vertically in the center */
-            
+            justify-content: flex-start;
+            /* Distributes space around items */
+            align-items: center;
+            /* Aligns items vertically in the center */
+
             background-color: #f0f0f0;
             padding: 5px;
             height: 70vh;
@@ -33,20 +37,26 @@
         }
 
         .box1 {
-            flex-shrink: 0; /* Prevents items from shrinking */
-            flex-basis: 200px;  /* Initial size of the item */
-            flex-grow: 2;   /* Grow items */
+            flex-shrink: 0;
+            /* Prevents items from shrinking */
+            flex-basis: 200px;
+            /* Initial size of the item */
+            flex-grow: 2;
+            /* Grow items */
         }
+
         .box2 {
             flex-grow: 1;
             flex-basis: 100px;
         }
+
         .box3 {
             flex-grow: 1;
             flex-basis: 100px;
         }
     </style>
 </head>
+
 <body>
     <h1>Flexbox Example</h1>
 
@@ -56,4 +66,5 @@
         <div class="flex-item box3">Box 3</div>
     </div>
 </body>
+
 </html>
