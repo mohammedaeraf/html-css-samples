@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Define CSS variables in :root for global scope */
+        :root {
+            --main-color: #3498db;
+            /* Blue color */
+            --font-size: 16px;
+            --padding: 10px;
+        }
+
+        /* Using the variables */
+        .container {
+            background-color: var(--main-color);
+            padding: var(--padding);
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: white;
+            font-size: var(--font-size);
+            padding: var(--padding);
+        }
+
+        button {
+            padding: var(--padding);
+            font-size: var(--font-size);
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            margin: var(--padding);
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS Variables Demo</h1>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            // Update the CSS variable dynamically
+            document.documentElement.style.setProperty('--main-color', '#2ecc71'); // Green color
+        }
+    </script>
+</body>
+
+</html>

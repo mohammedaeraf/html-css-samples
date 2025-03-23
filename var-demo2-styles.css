@@ -23,6 +23,10 @@ footer {
   padding: var(--padding);
 }
 
+main {
+  min-height: 80vh;
+}
+
 /* Using --padding and --border-radius in multiple places */
 .content {
   padding: var(--padding);
